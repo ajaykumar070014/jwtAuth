@@ -22,9 +22,9 @@ dependencies {
 //	implementation 'org.hibernate:hibernate-core:5.5.7.Final'
 	implementation 'org.postgresql:postgresql'
 	implementation 'org.projectlombok:lombok:1.18.20'
-	implementation 'io.jsonwebtoken:jjwt-api:0.12.3' // API Module dependency
-	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.3' // Implementation Module dependency
-	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.3' // Jackson Integration dependency
+//	implementation 'io.jsonwebtoken:jjwt-api:0.12.3' // API Module dependency
+//	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.3' // Implementation Module dependency
+//	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.3' // Jackson Integration dependency
 
 
 	compileOnly 'org.projectlombok:lombok:1.18.20'
