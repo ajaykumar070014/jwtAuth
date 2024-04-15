@@ -22,6 +22,7 @@ public class HomeController {
     }
     @GetMapping("/current-user")
     public String getLoggedInUser(Principal principal){
+        System.out.println("Current Users");
         return principal.getName();
     }
 }
