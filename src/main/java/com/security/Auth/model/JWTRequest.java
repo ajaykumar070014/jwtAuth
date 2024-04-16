@@ -7,10 +7,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-
-public class UserModel {
-    private String userId;
-    private String name;
+@Builder
+public class JWTRequest {
     private String email;
+    private String password;
 }
-
