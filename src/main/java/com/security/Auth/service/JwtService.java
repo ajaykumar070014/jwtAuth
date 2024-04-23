@@ -15,6 +15,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
+    public static final long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
     private final String SECRET_KEY = "4bb6d1dfbafb64a681139d1586b6f1160d18159afd57c8c79136d7490630407c";
 
     public String extractUsername(String token) {
@@ -55,7 +56,7 @@ public class JwtService {
                 .builder()
                 .subject(user.getUsername())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + 24*60*60*1000 ))
+                .expiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 10 ))
                 .signWith(getSigninKey())
                 .compact();
 
